@@ -1,0 +1,135 @@
+/* CirraFold 公開網頁的共用樣式。不載入任何外部字型或指令碼（不追蹤訪客）。 */
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --text: #1f2328;
+  --muted: #59636e;
+  --accent: #2563eb;
+  --border: #d8dee4;
+  --code-bg: #eef1f4;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1419;
+    --surface: #161b22;
+    --text: #e6edf3;
+    --muted: #9198a1;
+    --accent: #6ea8ff;
+    --border: #30363d;
+    --code-bg: #1f2630;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Microsoft JhengHei", "PingFang TC", "Noto Sans TC", system-ui, sans-serif;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+header,
+main,
+footer {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+header {
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  font-size: 0.95rem;
+}
+
+main {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 28px 32px;
+  margin-top: 16px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 32px 0 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+p,
+li {
+  margin: 8px 0;
+}
+
+.lead {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+code {
+  background: var(--code-bg);
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  word-break: break-all;
+}
+
+.note {
+  border-left: 4px solid var(--accent);
+  background: var(--code-bg);
+  padding: 8px 14px;
+  border-radius: 0 8px 8px 0;
+}
+
+footer {
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding-top: 16px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 18px 16px 24px;
+  }
+
+  h1 {
+    font-size: 1.45rem;
+  }
+}

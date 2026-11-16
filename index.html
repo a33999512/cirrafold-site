@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CirraFold</title>
+  <meta name="description" content="CirraFold：在 Windows 檔案總管裡統一管理多個 Google 雲端硬碟帳號的桌面程式。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="./">CirraFold</a>
+    <nav>
+      <a href="./">首頁</a>
+      <a href="privacy.html">隱私權政策</a>
+      <a href="terms.html">服務條款</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>在檔案總管裡，統一管理多個 Google 雲端硬碟帳號</h1>
+    <p class="lead">CirraFold 是 Windows 桌面程式。你的多個 Google 帳號，在檔案總管裡就是一個普通的資料夾，不必在瀏覽器裡切換帳號。</p>
+
+    <h2>功能</h2>
+    <ul>
+      <li><strong>一個資料夾管理多個帳號</strong>：檔案總管左側有一個 CirraFold 資料夾，用法和一般資料夾一樣。</li>
+      <li><strong>隨選下載</strong>：檔案平常只在雲端，不佔本機空間；打開時才下載。</li>
+      <li><strong>一律保留在此裝置上</strong>：常用的檔案或資料夾可以固定留在本機，沒有網路也能開啟。</li>
+      <li><strong>帳號群組</strong>：新檔案依你選的規則放到群組裡的某個帳號，例如同一個資料夾的檔案放在同一個帳號。</li>
+      <li><strong>刪除可以復原</strong>：在本機刪除的檔案，雲端是移到 Google 雲端硬碟的垃圾桶（30 天內可以還原），而不是永久刪除。一次刪除大量檔案時，會先暫停，等你確認。</li>
+    </ul>
+
+    <h2>運作方式與你的資料</h2>
+    <ul>
+      <li>CirraFold 完全在你的電腦上執行。檔案只在「你的電腦」和「Google 的伺服器」之間傳輸。</li>
+      <li>開發者沒有任何伺服器，也收不到你的檔案、帳號資訊或使用紀錄。</li>
+      <li>登入授權（token）用 Windows 的加密機制（DPAPI）存在你的電腦上，只有你的 Windows 帳號能解開。</li>
+      <li>Google 登入畫面上顯示的專案名稱，只是讓 Google 知道是哪一個程式在存取你的雲端硬碟。</li>
+    </ul>
+    <p>詳細內容請見 <a href="privacy.html">隱私權政策</a>。</p>
+
+    <h2>兩種使用方式</h2>
+    <ul>
+      <li><strong>內建專案</strong>（一般使用者）：只能存取 CirraFold 建立的檔案，看不到帳號裡原本就有的檔案。</li>
+      <li><strong>使用你自己的 Google Cloud 專案</strong>（進階）：可以選擇讓 CirraFold 管理帳號裡原本就有的檔案，並同步你在網頁或手機上做的變更。程式內的設定精靈會一步一步引導你建立。</li>
+    </ul>
+
+    <h2>開發狀態</h2>
+    <p>CirraFold 目前還在開發中，尚未提供公開下載。</p>
+
+    <h2>聯絡</h2>
+    <p>有問題或建議，請到 <a href="https://github.com/a33999512/cirrafold-site/issues">GitHub Issues</a> 留言。</p>
+  </main>
+
+  <footer>
+    <p>CirraFold 是獨立開發的程式，與 Google 沒有任何關係。Google 雲端硬碟（Google Drive）是 Google LLC 的商標。</p>
+  </footer>
+</body>
+</html>
